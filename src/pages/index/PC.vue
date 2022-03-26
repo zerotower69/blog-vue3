@@ -1,6 +1,6 @@
 <template>
   <n-config-provider :theme="darkTheme">
-    <div class="app-container" style="height: 1800px; width: 100%">
+    <div class="app-container">
       {{ message }}
       <n-button type="primary" size="medium">aa</n-button>
     </div>
@@ -24,3 +24,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss">
+.app-container {
+  height: 1800px;
+  width: 100%;
+}
+</style>
