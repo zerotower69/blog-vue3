@@ -1,0 +1,55 @@
+Hash: 845eb30779997687a284
+Version: webpack 4.46.0
+Time: 6822ms
+Built at: 2022/03/26 15:55:23
+                 Asset       Size  Chunks                         Chunk Names
+            admin.html  403 bytes          [emitted]              
+              admin.js   7.64 MiB   admin  [emitted]              admin
+css/admin.845eb307.css   54 bytes   admin  [emitted] [immutable]  admin
+css/index.845eb307.css   54 bytes   index  [emitted] [immutable]  index
+            index.html  398 bytes          [emitted]              
+              index.js   7.64 MiB   index  [emitted]              index
+Entrypoint index = css/index.845eb307.css index.js
+Entrypoint admin = css/admin.845eb307.css admin.js
+[0] multi (webpack)-dev-server/client?protocol=ws%3A&hostname=0.0.0.0&port=8000&pathname=%2Fws&logging=info&reconnect=10 (webpack)/hot/dev-server.js ./src/pages/index/main 52 bytes {index} [built]
+[1] multi (webpack)-dev-server/client?protocol=ws%3A&hostname=0.0.0.0&port=8000&pathname=%2Fws&logging=info&reconnect=10 (webpack)/hot/dev-server.js ./src/pages/admin/main 52 bytes {admin} [built]
+[./node_modules/vue/dist/vue.runtime.esm-bundler.js] 611 bytes {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=8000&pathname=%2Fws&logging=info&reconnect=10] (webpack)-dev-server/client?protocol=ws%3A&hostname=0.0.0.0&port=8000&pathname=%2Fws&logging=info&reconnect=10 6.59 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/modules/strip-ansi/index.js] (webpack)-dev-server/client/modules/strip-ansi/index.js 5.2 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/overlay.js] (webpack)-dev-server/client/overlay.js 6.55 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/socket.js] (webpack)-dev-server/client/socket.js 1.8 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/utils/createSocketURL.js] (webpack)-dev-server/client/utils/createSocketURL.js 4.28 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/utils/log.js] (webpack)-dev-server/client/utils/log.js 548 bytes {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/utils/parseURL.js] (webpack)-dev-server/client/utils/parseURL.js 1.25 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/utils/reloadApp.js] (webpack)-dev-server/client/utils/reloadApp.js 2.04 KiB {index} {admin} [built]
+[./node_modules/webpack-dev-server/client/utils/sendMessage.js] (webpack)-dev-server/client/utils/sendMessage.js 436 bytes {index} {admin} [built]
+[./node_modules/webpack/hot/dev-server.js] (webpack)/hot/dev-server.js 1.59 KiB {index} {admin} [built]
+[./src/pages/admin/main.ts] 110 bytes {admin} [built] [1 error]
+[./src/pages/index/main.ts] 334 bytes {index} [built] [1 error]
+    + 2138 hidden modules
+
+ERROR in /Users/zerotower/Documents/blog/blog-vue3/src/pages/admin/main.ts
+./src/pages/admin/main.ts 2:7-12
+[tsl] ERROR in /Users/zerotower/Documents/blog/blog-vue3/src/pages/admin/main.ts(2,8)
+      TS1192: Module '"/Users/zerotower/Documents/blog/blog-vue3/src/pages/admin/Admin.vue"' has no default export.
+
+ERROR in /Users/zerotower/Documents/blog/blog-vue3/src/pages/index/main.ts
+./src/pages/index/main.ts 2:7-9
+[tsl] ERROR in /Users/zerotower/Documents/blog/blog-vue3/src/pages/index/main.ts(2,8)
+      TS1192: Module '"/Users/zerotower/Documents/blog/blog-vue3/src/pages/index/PC.vue"' has no default export.
+Child HtmlWebpackCompiler:
+                          Asset      Size               Chunks  Chunk Names
+    __child-HtmlWebpackPlugin_0  4.69 KiB  HtmlWebpackPlugin_0  HtmlWebpackPlugin_0
+    __child-HtmlWebpackPlugin_1  4.71 KiB  HtmlWebpackPlugin_1  HtmlWebpackPlugin_1
+    Entrypoint HtmlWebpackPlugin_0 = __child-HtmlWebpackPlugin_0
+    Entrypoint HtmlWebpackPlugin_1 = __child-HtmlWebpackPlugin_1
+    [./node_modules/html-webpack-plugin/lib/loader.js!./public/admin.html] 589 bytes {HtmlWebpackPlugin_1} [built]
+    [./node_modules/html-webpack-plugin/lib/loader.js!./public/index.html] 572 bytes {HtmlWebpackPlugin_0} [built]
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/vue-loader/dist/stylePostLoader.js!node_modules/postcss-loader/dist/cjs.js!node_modules/vue-loader/dist/index.js??ref--9-0!src/pages/admin/Admin.vue?vue&type=style&index=0&id=590643ca&lang=scss:
+    Entrypoint mini-css-extract-plugin = *
+    [./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js?!./src/pages/admin/Admin.vue?vue&type=style&index=0&id=590643ca&lang=scss] ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/vue-loader/dist??ref--9-0!./src/pages/admin/Admin.vue?vue&type=style&index=0&id=590643ca&lang=scss 362 bytes {mini-css-extract-plugin} [built]
+    [./node_modules/css-loader/dist/runtime/api.js] 1.57 KiB {mini-css-extract-plugin} [built]
+Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!node_modules/vue-loader/dist/stylePostLoader.js!node_modules/postcss-loader/dist/cjs.js!node_modules/vue-loader/dist/index.js??ref--9-0!src/pages/index/PC.vue?vue&type=style&index=0&id=7d22a4d4&lang=scss:
+    Entrypoint mini-css-extract-plugin = *
+    [./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js?!./src/pages/index/PC.vue?vue&type=style&index=0&id=7d22a4d4&lang=scss] ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/vue-loader/dist??ref--9-0!./src/pages/index/PC.vue?vue&type=style&index=0&id=7d22a4d4&lang=scss 362 bytes {mini-css-extract-plugin} [built]
+    [./node_modules/css-loader/dist/runtime/api.js] 1.57 KiB {mini-css-extract-plugin} [built]

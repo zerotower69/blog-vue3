@@ -7,7 +7,7 @@
   </n-config-provider>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, ref } from "vue";
 import { darkTheme, lightTheme, NButton, NConfigProvider } from "naive-ui";
 export default defineComponent({

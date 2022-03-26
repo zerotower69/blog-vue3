@@ -7,19 +7,27 @@
   </n-config-provider>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
+<script lang="ts">
+import Vue, { defineComponent, ref, onMounted } from "vue";
 import { darkTheme, lightTheme, NButton, NConfigProvider } from "naive-ui";
 export default defineComponent({
   components: { NButton, NConfigProvider },
   setup() {
     const message = ref("hello");
     const theme = ref("dark");
+    const printHello: () => void = () => {
+      console.log("hello, vue-app");
+    };
+
+    onMounted(() => {
+      printHello();
+    });
     return {
       message,
       theme,
       darkTheme,
       lightTheme,
+      printHello,
     };
   },
 });
