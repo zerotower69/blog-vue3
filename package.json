@@ -4,12 +4,25 @@
   "description": "using vue@3 to create my blog by multiply pages!",
   "main": "index.js",
   "scripts": {
-    "prepare": "npx husky-init && npm install",
-    "install": "npm install",
+    "prepare": "npx husky-init && husky install",
     "dev": "npx webpack serve --config ./build/webpack.dev.js --json > static.json",
-    "analyzer":"npx webpack --config ./build/webpack.analyzer.js",
+    "analyzer": "npx webpack --config ./build/webpack.analyzer.js",
     "build": "npx webpack --config ./build/webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "lint-staged",
+    "test": "jest  --passWithNoTests"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue,jsx,tsx}": [
+      "prettier --write",
+      "tslint --cache --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint  --passWithNoTests",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "keywords": [
     "vue3",
@@ -22,9 +35,16 @@
   "devDependencies": {
     "@types/vue": "^2.0.0",
     "@vue/compiler-sfc": "^3.2.31",
+    "@vue/test-utils": "^2.0.0-rc.18",
+    "babel-jest": "^27.5.1",
+    "commitizen": "^4.2.4",
     "css-loader": "^5.2.7",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.12.0",
     "html-webpack-plugin": "^4.5.2",
     "husky": "^7.0.0",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
     "mini-css-extract-plugin": "^1.6.2",
     "naive-ui": "^2.26.4",
     "postcss": "^8.4.12",
@@ -34,6 +54,7 @@
     "ts-loader": "^8.3.0",
     "typescript": "^4.6.3",
     "vfonts": "^0.0.3",
+    "vue-jest": "^3.0.7",
     "vue-loader": "^17.0.0",
     "vue-style-loader": "^4.1.3",
     "vue-template-compiler": "^2.6.14",
