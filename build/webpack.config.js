@@ -7,8 +7,7 @@ module.exports = {
     //配置入口文件
     entry: {
         index: path.resolve(__dirname, '../src/pages/index/main.js'),
-        // admin: {
-        // }
+        admin: path.resolve(__dirname, '../src/pages/admin/main')
     },
     output: {
         filename: '[name].js',
@@ -35,9 +34,15 @@ module.exports = {
         new VueLoaderPlugin(),
         new HtmlPlugin({
             filename: 'index.html',
-            template: path.resolve(__dirname, '../src/pages/index/index.html'),
+            template: path.resolve(__dirname, '../public/index.html'),
             inject: true,
             chunks: ['index']
+        }),
+        new HtmlPlugin({
+            filename: 'admin.html',
+            template: path.resolve(__dirname, "../public/admin.html"),
+            inject: true,
+            chunks: ['admin']
         })
     ]
 }
